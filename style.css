@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #1E3A5F;
+    color: white;
+    padding: 40px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: white;
+    color: #1E3A5F;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact span {
+    color: blue;
+}
+
+.contact a {
+    color: #1E3A5F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    background: #14223B;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    border-bottom: 3px solid #1E3A5F;
+    padding-bottom: 5px;
+    color: #1E3A5F;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background: #F4F4F4;
+    color: black;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+footer .contact {
+    color: black;
+    background: #F4F4F4;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer .contact a {
+    color: black !important;
+    text-decoration: none;
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+}
