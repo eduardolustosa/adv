@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>"Justiça é dar a cada um o que lhe é devido."</h1>
         <h2>Dr. Eduardo Lustosa</h2>
         <p>Advocacia e Consultoria Jurídica</p>
-        <p class="contact">Contato: <a href="https://wa.me/5585988281918" target="_blank" rel="noopener noreferrer">(85) 9.8828-1918 (WhatsApp)</a></p>
+        <p class="contact">
+            Contato: <a href="https://wa.me/5585988281918" target="_blank" rel="noopener noreferrer">(85) 9.8828-1918 (WhatsApp)</a>
+        </p>
     </header>
     
     <nav>
-        <ul>
+        <button id="menu-toggle">☰ Menu</button>
+        <ul id="menu">
             <li><a href="#tributario">Direito Tributário</a></li>
             <li><a href="#criminal">Direito Criminal</a></li>
             <li><a href="#previdenciario">Direito Previdenciário</a></li>
@@ -23,14 +27,14 @@
             <li><a href="#trabalho">Direito do Trabalho</a></li>
         </ul>
     </nav>
-    
+
     <section id="tributario">
         <h2>Direito Tributário</h2>
         <ul>
-            <li>Recuperação de tributos pagos indevidamente. (Recuperação Tributária)</li>
+            <li>Recuperação de tributos pagos indevidamente.</li>
         </ul>
     </section>
-    
+
     <section id="criminal">
         <h2>Direito Criminal</h2>
         <ul>
@@ -41,7 +45,7 @@
             <li>Recursos contra condenações.</li>
         </ul>
     </section>
-    
+
     <section id="previdenciario">
         <h2>Direito Previdenciário</h2>
         <ul>
@@ -50,7 +54,7 @@
             <li>Processos contra o INSS por negativa de benefícios.</li>
         </ul>
     </section>
-    
+
     <section id="familia">
         <h2>Direito de Família</h2>
         <ul>
@@ -63,7 +67,7 @@
             <li>Testamentos e inventários.</li>
         </ul>
     </section>
-    
+
     <section id="trabalho">
         <h2>Direito do Trabalho</h2>
         <h3>Para Trabalhadores</h3>
@@ -80,9 +84,19 @@
             <li>Defesa em reclamações trabalhistas.</li>
         </ul>
     </section>
-    
+
     <footer>
-        <p>Contato: <a href="https://wa.me/5585988281918" target="_blank" rel="noopener noreferrer">(85) 9.8828-1918 (WhatsApp)</a></p>
+        <p class="contact">
+            Contato: <a href="https://wa.me/5585988281918" target="_blank" rel="noopener noreferrer">(85) 9.8828-1918 (WhatsApp)</a>
+        </p>
     </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            let menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
+
 </body>
 </html>
